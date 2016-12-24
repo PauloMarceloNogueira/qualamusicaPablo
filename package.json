@@ -1,0 +1,23 @@
+{
+  "name": "sendmeasong",
+  "version": "1.0.0",
+  "description": "Discovery new songs on spotify",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloMarceloNogueira/sendmeasong.git"
+  },
+  "author": "Paulo Marcelo Abbondanza Nogueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloMarceloNogueira/sendmeasong/issues"
+  },
+  "homepage": "https://github.com/PauloMarceloNogueira/sendmeasong#readme",
+  "dependencies": {
+    "botkit": "^0.4.3",
+    "spotify-web-api-node": "^2.3.6"
+  }
+}
