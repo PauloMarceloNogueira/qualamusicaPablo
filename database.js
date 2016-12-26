@@ -23,9 +23,28 @@ class Database {
     })
   }
 
-  get() {
-    User.find({},function(err,user) {
-      console.log(user,"USER!=======")
+  get(name,callback) {
+    User.find({},function(err,user){
+      if(err) {
+        callback(err,null)
+      } else {
+        callback(null,user)
+      }
+    })
+  }
+
+  getToken(a,callback) {
+    console.log(typeof(a),"NAME")
+    var user = a
+    User.find({name:"Fran Boni"},function(err,token){
+      console.log(token,"AQU")
+      if(err){
+        console.log(err,"ERRRR")
+        callback(err,null)
+      } else {
+        console.log(token,"TOKEEEN")
+        callback(null,token)
+      }
     })
   }
 }
